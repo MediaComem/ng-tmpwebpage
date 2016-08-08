@@ -9,13 +9,25 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task('js', function () {
+    return gulp.src('js/*js')
+        .pipe(gulp.dest('./js'));
+});
+
+gulp.task('js-watch', ['js'], function (done) {
+    browserSync.reload();
+    done();
+});
+
 gulp.task('serve', function() {
   browserSync.init({
     server: {
       baseDir: "./"
     }
   });
+
   gulp.watch("./sass/**/*.scss", ['sass'])
+  gulp.watch("./js/*.js", ['js-watch']);
   gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
