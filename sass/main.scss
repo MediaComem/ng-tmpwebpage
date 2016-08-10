@@ -1,3 +1,47 @@
 body{
 	color:#ccc;
+	background: #333;
+}
+.site-header{
+	background: #69D2E7;
+	.header-img{
+		margin-top: 30px;
+		margin-bottom: 20px; 
+		text-align: center;
+	}
+	.header-slogan{
+		text-transform: uppercase;
+		text-align: center;
+		h2{
+			color: #fff;
+			font-size: 20px;
+		}
+	}
+	nav{
+		font: 1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			display: table;
+			width:100%;
+			li{
+				a{
+					color: #fff;
+				}
+				display: table-cell;
+				&:first-child{
+					text-align: left;
+				}
+				&:nth-child(2){
+					text-align: center;
+				}
+				&:last-child{
+					text-align: right;
+				}
+			}
+		}
+	}
 }
