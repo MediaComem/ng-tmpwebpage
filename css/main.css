@@ -1,11 +1,30 @@
+@font-face {
+  font-family: megatron;
+  src: url(../fonts/Megatron.otf) format("opentype"); }
+
 body {
   color: #ccc;
   background: #333; }
 
+h1, h2, h3 {
+  text-align: center; }
+
+.maps-youtube-vid {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden; }
+  .maps-youtube-vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
 .site-header {
   background: #69D2E7; }
   .site-header .header-img {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center; }
   .site-header .header-slogan {
@@ -34,3 +53,54 @@ body {
           text-align: center; }
         .site-header nav ul li:last-child {
           text-align: right; }
+
+.content-video {
+  background: #A7DBD8;
+  padding-top: 20px;
+  font-family: megatron; }
+  .content-video h3 {
+    font-size: 18px;
+    color: #fff; }
+    .content-video h3:first-child {
+      color: #27d0d8; }
+
+.how-to {
+  padding-top: 20px;
+  font-family: megatron;
+  background: #fff;
+  color: #333; }
+  .how-to p span {
+    color: #27d0d8; }
+  .how-to p:nth-child(2) {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .how-to .illustrations img {
+    max-width: 100%;
+    margin: 20px 0; }
+
+.where {
+  background: #E0E4CC;
+  color: #333; }
+  .where h2 {
+    font-family: megatron; }
+  .where p {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+  .where .maps-youtube-vid {
+    margin-top: 20px; }
+
+.site-footer {
+  font-family: megatron;
+  background: #333; }
+  .site-footer p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px; }
+  .site-footer img {
+    width: 100%; }
+  .site-footer [alt^="facebook"] {
+    margin-top: 10px; }
+  .site-footer [alt^="mei"] {
+    margin-top: 10px;
+    margin-bottom: 20px; }

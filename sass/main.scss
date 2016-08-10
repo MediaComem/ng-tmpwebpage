@@ -1,11 +1,38 @@
+@font-face {
+  font-family: megatron;
+  src: url(../fonts/Megatron.otf) format("opentype");
+}
+
+$font-standard: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+$section-margin-top: 20px;
+$light-blue: #27d0d8;
+$dark-blue: #186f74;
+
 body{
 	color:#ccc;
 	background: #333;
 }
+h1,h2,h3{
+	text-align: center;
+}
+.maps-youtube-vid{
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+} 
 .site-header{
 	background: #69D2E7;
 	.header-img{
-		margin-top: 30px;
+		margin-top: $section-margin-top;
 		margin-bottom: 20px; 
 		text-align: center;
 	}
@@ -45,3 +72,110 @@ body{
 		}
 	}
 }
+.content-video{
+	background: #A7DBD8;
+	padding-top: $section-margin-top;
+	font-family: megatron;
+	h3{
+		font-size: 18px;
+		color: #fff;
+		&:first-child{
+			color: $light-blue;
+		}
+	}
+}
+.how-to{
+	padding-top: $section-margin-top;
+	font-family: megatron;
+	background: #fff;
+	color: #333;
+	p{
+		span{
+			color: $light-blue;
+		}
+		&:nth-child(2){
+			font-family: $font-standard;
+		}
+	}
+	.illustrations{
+		img{
+			max-width: 100%;
+			margin: 20px 0;
+		}
+	}
+}
+.where{
+	background: #E0E4CC;
+	color: #333;
+	h2{
+		font-family: megatron;
+	}
+	p{
+		text-align: center;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+	.maps-youtube-vid{
+		margin-top: 20px;
+	}
+}
+.site-footer{
+	font-family: megatron;
+	p{
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom:10px;
+	}
+	img{
+		width: 100%;
+	}
+	[alt^="facebook"]{
+		margin-top: 10px;
+	}
+	[alt^="mei"]{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	background: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
