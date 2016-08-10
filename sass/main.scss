@@ -30,9 +30,17 @@ h1,h2,h3{
   }
 } 
 .site-header{
-	background: #69D2E7;
+	background-image: url(img/background-rectangle-w149-h28.png),url(img/background-rectangle-w149-h28-tl-darkgreen.png), url(img/background-pions.png);
+	background-repeat: no-repeat,no-repeat, no-repeat;
+	background-size:149px 28px,149px 28px,cover;
+	background-position:bottom right,top left,center;
+	padding-bottom:30px;
 	.header-img{
-		margin-top: $section-margin-top;
+		background-image: url(img/background-rectangle-w96-h18-tl-darkgreen.png);
+		background-repeat: no-repeat;
+		background-size:96px 18px;
+		background-position:top left;
+		padding-top: 40px;
 		margin-bottom: 20px; 
 		text-align: center;
 	}
@@ -46,6 +54,7 @@ h1,h2,h3{
 	}
 	nav{
 		font: 1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+		background: $dark-blue;
 		padding-top: 15px;
 		padding-bottom: 10px;
 		ul{
@@ -73,25 +82,32 @@ h1,h2,h3{
 	}
 }
 .content-video{
-	background: #A7DBD8;
+	background: #fff;
 	padding-top: $section-margin-top;
+	margin-top: -1px;
+	margin-bottom: -1px;
 	font-family: megatron;
+	padding-bottom: 20px;
 	h3{
 		font-size: 18px;
-		color: #fff;
+		color: #333;
 		&:first-child{
 			color: $light-blue;
 		}
 	}
 }
 .how-to{
-	padding-top: $section-margin-top;
+	padding-top: 40px;
 	font-family: megatron;
-	background: #fff;
+	background-image: url(img/background-rectangle-w149-h28-tl.png),url(img/background-rectangle-w149-h28-br-black.png), url(img/bg-light-blue.png);
+	background-repeat: no-repeat,no-repeat, repeat;
+	background-size:149px 28px,149px 28px,cover;
+	background-position:top left,bottom right,center;
 	color: #333;
+	padding-bottom: 28px;
 	p{
 		span{
-			color: $light-blue;
+			color: #fff;
 		}
 		&:nth-child(2){
 			font-family: $font-standard;
@@ -105,8 +121,8 @@ h1,h2,h3{
 	}
 }
 .where{
-	background: #E0E4CC;
-	color: #333;
+	background: #333;
+	color: #fff;
 	h2{
 		font-family: megatron;
 	}

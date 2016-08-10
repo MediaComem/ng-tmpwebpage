@@ -22,9 +22,17 @@ h1, h2, h3 {
     height: 100% !important; }
 
 .site-header {
-  background: #69D2E7; }
+  background-image: url(img/background-rectangle-w149-h28.png), url(img/background-rectangle-w149-h28-tl-darkgreen.png), url(img/background-pions.png);
+  background-repeat: no-repeat,no-repeat, no-repeat;
+  background-size: 149px 28px,149px 28px,cover;
+  background-position: bottom right,top left,center;
+  padding-bottom: 30px; }
   .site-header .header-img {
-    margin-top: 20px;
+    background-image: url(img/background-rectangle-w96-h18-tl-darkgreen.png);
+    background-repeat: no-repeat;
+    background-size: 96px 18px;
+    background-position: top left;
+    padding-top: 40px;
     margin-bottom: 20px;
     text-align: center; }
   .site-header .header-slogan {
@@ -35,6 +43,7 @@ h1, h2, h3 {
       font-size: 20px; }
   .site-header nav {
     font: 1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #186f74;
     padding-top: 15px;
     padding-bottom: 10px; }
     .site-header nav ul {
@@ -55,22 +64,29 @@ h1, h2, h3 {
           text-align: right; }
 
 .content-video {
-  background: #A7DBD8;
+  background: #fff;
   padding-top: 20px;
-  font-family: megatron; }
+  margin-top: -1px;
+  margin-bottom: -1px;
+  font-family: megatron;
+  padding-bottom: 20px; }
   .content-video h3 {
     font-size: 18px;
-    color: #fff; }
+    color: #333; }
     .content-video h3:first-child {
       color: #27d0d8; }
 
 .how-to {
-  padding-top: 20px;
+  padding-top: 40px;
   font-family: megatron;
-  background: #fff;
-  color: #333; }
+  background-image: url(img/background-rectangle-w149-h28-tl.png), url(img/background-rectangle-w149-h28-br-black.png), url(img/bg-light-blue.png);
+  background-repeat: no-repeat,no-repeat, repeat;
+  background-size: 149px 28px,149px 28px,cover;
+  background-position: top left,bottom right,center;
+  color: #333;
+  padding-bottom: 28px; }
   .how-to p span {
-    color: #27d0d8; }
+    color: #fff; }
   .how-to p:nth-child(2) {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .how-to .illustrations img {
@@ -78,8 +94,8 @@ h1, h2, h3 {
     margin: 20px 0; }
 
 .where {
-  background: #E0E4CC;
-  color: #333; }
+  background: #333;
+  color: #fff; }
   .where h2 {
     font-family: megatron; }
   .where p {
