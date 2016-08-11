@@ -22,13 +22,13 @@ h1, h2, h3 {
     height: 100% !important; }
 
 .site-header {
-  background-image: url(img/background-rectangle-w149-h28.png), url(img/background-rectangle-w149-h28-tl-darkgreen.png), url(img/background-pions.png);
+  background-image: url(img/background-rectangle-149x28-blue-tr.png), url(img/background-pions.png);
   background-repeat: no-repeat,no-repeat, no-repeat;
   background-size: 149px 28px,149px 28px,cover;
-  background-position: bottom right,top left,center;
+  background-position: bottom right,center;
   padding-bottom: 30px; }
   .site-header .header-img {
-    background-image: url(img/background-rectangle-w96-h18-tl-darkgreen.png);
+    background-image: url(img/background-rectangle-96x18-darkblue-tl.png);
     background-repeat: no-repeat;
     background-size: 96px 18px;
     background-position: top left;
@@ -64,7 +64,7 @@ h1, h2, h3 {
           text-align: right; }
 
 .content-video {
-  background: #fff;
+  background: #37bbcd;
   padding-top: 20px;
   margin-top: -1px;
   margin-bottom: -1px;
@@ -74,12 +74,12 @@ h1, h2, h3 {
     font-size: 18px;
     color: #333; }
     .content-video h3:first-child {
-      color: #27d0d8; }
+      color: #fff; }
 
 .how-to {
   padding-top: 40px;
   font-family: megatron;
-  background-image: url(img/background-rectangle-w149-h28-tl.png), url(img/background-rectangle-w149-h28-br-black.png), url(img/bg-light-blue.png);
+  background-image: url(img/background-rectangle-149x28-blue-tl.png), url(img/background-rectangle-149x28-black-br.png), url(img/bg-white.png);
   background-repeat: no-repeat,no-repeat, repeat;
   background-size: 149px 28px,149px 28px,cover;
   background-position: top left,bottom right,center;
