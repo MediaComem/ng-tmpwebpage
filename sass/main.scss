@@ -31,10 +31,17 @@ h1,h2,h3{
 } 
 .site-header{
 	background-image: url(img/background-rectangle-149x28-blue-tr.png),url(img/background-pions.png);
-	background-repeat: no-repeat,no-repeat, no-repeat;
-	background-size:149px 28px,149px 28px,cover;
+	background-repeat: no-repeat, no-repeat;
+	background-size:149px 28px,cover;
 	background-position:bottom right,center;
 	padding-bottom:30px;
+	@media(min-width: 768px){
+		background-image: url(img/background-header-bottom.png),url(img/background-pions.png);
+		background-repeat: no-repeat, no-repeat;
+		background-size:contain,cover;
+		background-position:bottom left,center;
+	    padding-bottom: 60px;
+	}
 	.header-img{
 		background-image: url(img/background-rectangle-96x18-darkblue-tl.png);
 		background-repeat: no-repeat;
@@ -43,6 +50,12 @@ h1,h2,h3{
 		padding-top: 40px;
 		margin-bottom: 20px; 
 		text-align: center;
+		@media(min-width: 768px){
+			background-image: url(img/nav-left.png);
+			background-repeat: no-repeat;
+			background-size:55px 50px;
+			background-position:top right;
+		}
 	}
 	.header-slogan{
 		text-transform: uppercase;
@@ -50,6 +63,11 @@ h1,h2,h3{
 		h2{
 			color: #fff;
 			font-size: 20px;
+			@media (min-width:768px){
+				font-size: 4em;
+				margin-top: -65px;
+    			margin-bottom: 45px;
+			}
 		}
 	}
 	nav{
@@ -93,6 +111,18 @@ h1,h2,h3{
 		color: #333;
 		&:first-child{
 			color: #fff;
+		}
+		@media (min-width:768px){
+			text-align: left;
+			font-size: 30px;
+			&:first-child{
+				max-width: 385px;
+				margin-top: 0;
+			}
+			&:last-child{
+				margin-top: 60px;
+				max-width: 600px;
+			}
 		}
 	}
 }
